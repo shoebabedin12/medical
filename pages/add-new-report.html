@@ -50,10 +50,10 @@
             <div class="col-lg-3">
               <div>
                 <ul class="side_nav">
-                  <li class="active">
+                  <li class="">
                     <a href="#">Dashboard</a>
                   </li>
-                  <li>
+                  <li class="active">
                     <a href="#">Add New Report</a>
                   </li>
                   <li>
@@ -84,7 +84,7 @@
                         <label for="h-name" class="col-sm-4 col-form-label"
                           >Date *</label
                         >
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 position-relative">
                           <input
                             type="date"
                             readonly
@@ -92,6 +92,13 @@
                             id="h-name"
                             value="email@example.com"
                           />
+                          <span class="dropdown-icon">
+                            <img
+                              class="img-fluid"
+                              src="./../assets/images/calendar.png"
+                              alt=""
+                            />
+                          </span>
                         </div>
                       </div>
                       <div class="mb-3 row">

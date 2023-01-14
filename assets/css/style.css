@@ -140,7 +140,12 @@ input:focus-visible {
   letter-spacing: var(--letter-spacing);
   color: #ffffff;
 }
-
+.auth form .dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
 /* auth */
 
 /* auth-email-review */
@@ -352,7 +357,33 @@ input:focus-visible {
   padding-top: 73px;
   padding-bottom: 59px;
 }
-.dashboard .profile .add-new-report {
+.dashboard .add-new-report .dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+.dashboard .add-new-report {
+}
+.dashboard .add-new-report {
+}
+.dashboard .add-new-report {
+}
+.dashboard .add-new-report {
+}
+.dashboard .add-new-report {
+}
+.dashboard .add-new-report {
+}
+.dashboard .add-new-report {
+}
+.dashboard .add-new-report {
+}
+.dashboard .add-new-report {
+}
+.dashboard .add-new-report {
+}
+.dashboard .add-new-report {
 }
 .dashboard {
 }
