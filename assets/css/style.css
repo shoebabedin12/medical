@@ -17,6 +17,16 @@ body {
   padding-left: 16px;
   padding-right: 16px;
 }
+
+select:focus,
+input:focus {
+  box-shadow: none !important;
+  border-color: var(--border-color) !important;
+}
+select:focus-visible,
+input:focus-visible {
+  outline: 0px;
+}
 /* common css */
 
 /* variable  css */
@@ -43,6 +53,14 @@ body {
 .navbar {
   border: 1px solid var(--border-color);
 }
+.navbar .collapse .navbar-nav {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #000000;
+}
 .navbar .collapse form {
   gap: 39px;
 }
@@ -57,3 +75,71 @@ body {
   color: #0f0202;
 }
 /* navbar */
+
+/* auth */
+.auth {
+  max-width: 622px;
+  margin: 135px auto 0;
+}
+.auth form {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 64px 74px;
+}
+.auth form .auth_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: var(--letter-spacing);
+  color: #000000;
+  margin-bottom: 42px;
+}
+.auth form .custom_input {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0px;
+  cursor: pointer;
+}
+.auth form .btn {
+  background: #18a0fb;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: var(--letter-spacing);
+  color: #ffffff;
+}
+
+/* auth */
+
+/* auth-email-review */
+.auth-email-review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 0rem);
+}
+.auth-email-review h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: var(--letter-spacing);
+  color: #000000;
+}
+.auth-email-review p {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: var(--letter-spacing);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* auth-email-review */
