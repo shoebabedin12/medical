@@ -211,10 +211,11 @@ input:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 153px;
+  gap: 84px;
+  flex-wrap: wrap;
 }
 .dashboard .dashboard-result .dashboard-items {
-  width: 100%;
+  flex-basis: 320px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 18px 25px;
@@ -341,34 +342,17 @@ input:focus-visible {
   margin-bottom: 30px;
   display: inline-block;
 }
-.dashboard .profile .profile-body-main .right-col {
-}
-.dashboard .profile .profile-body-main .right-col {
-}
-.dashboard .profile .profile-body-main .right-col {
-}
-.dashboard .profile .profile-body-main .right-col {
-}
 
-.dashboard .profile .profile-body-main {
+.dashboard .add-new-report form {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
 }
-.dashboard .profile .profile-body-main {
+.dashboard .add-new-report .profile-heading {
+  text-align: center;
+  padding-top: 73px;
+  padding-bottom: 59px;
 }
-.dashboard .profile .profile-body-main {
-}
-.dashboard .profile .profile-body-main {
-}
-.dashboard .profile .profile-body-main {
-}
-.dashboard .profile .profile-body-main {
-}
-.dashboard .profile .profile-body-main {
-}
-.dashboard .profile .profile-body-main {
-}
-.dashboard .profile .profile-body-main {
-}
-.dashboard {
+.dashboard .profile .add-new-report {
 }
 .dashboard {
 }
