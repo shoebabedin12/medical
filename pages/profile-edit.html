@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <section class="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand opacity-0" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <h2 class="navbar-nav mx-auto mb-2 mb-lg-0">
+                Medical Report Maker
+              </h2>
+              <div class="d-flex align-items-center is-auth">
+                <a href="#" class="">
+                  <img
+                    class="img-fluid"
+                    src="./../assets/images/profile.png"
+                    alt=""
+                  />
+                  X Hospital Pvt. Ltd
+                </a>
+                <a href="#" class=""> Sign Out </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <div class="dashboard">
+        <div class="custom-container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div>
+                <ul class="side_nav">
+                  <li class="active">
+                    <a href="#">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#">Add New Report</a>
+                  </li>
+                  <li>
+                    <a href="#">Sent Reports</a>
+                  </li>
+                  <li>
+                    <a href="#">Completed Reports</a>
+                  </li>
+                  <li>
+                    <a href="#">All Reports</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#">Help</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="profile">
+                <h2 class="profile-heading">Hospital Profile Edit</h2>
+                <div class="profile-body">
+                  <form class="row">
+                    <div class="col-lg-6">
+                      <div class="mb-3 row">
+                        <label for="h-name" class="col-sm-4 col-form-label"
+                          >Hospital Name *</label
+                        >
+                        <div class="col-sm-8">
+                          <input
+                            type="text"
+                            readonly
+                            class="form-control"
+                            id="h-name"
+                            value="email@example.com"
+                          />
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="h-name" class="col-sm-4 col-form-label"
+                          >Email *</label
+                        >
+                        <div class="col-sm-8">
+                          <input
+                            type="text"
+                            readonly
+                            class="form-control"
+                            id="h-name"
+                            value="email@example.com"
+                            disabled
+                          />
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="h-name" class="col-sm-4 col-form-label"
+                          >Old Password
+                        </label>
+                        <div class="col-sm-8">
+                          <input
+                            type="password"
+                            readonly
+                            class="form-control"
+                            id="h-name"
+                            value="email@example.com"
+                          />
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="h-name" class="col-sm-4 col-form-label"
+                          >New Password
+                        </label>
+                        <div class="col-sm-8">
+                          <input
+                            type="password"
+                            readonly
+                            class="form-control"
+                            id="h-name"
+                            value="email@example.com"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="mb-3 row">
+                        <label for="h-name" class="col-sm-4 col-form-label"
+                          >Phone No
+                        </label>
+                        <div class="col-sm-8">
+                          <input
+                            type="password"
+                            readonly
+                            class="form-control"
+                            id="h-name"
+                            value="email@example.com"
+                          />
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="h-name" class="col-sm-4 col-form-label"
+                          >Address
+                        </label>
+                        <div class="col-sm-8">
+                          <textarea
+                            readonly
+                            class="form-control"
+                            name=""
+                            id=""
+                            style="height: 123px"
+                          >
+                          jdvbjdb
+                          </textarea>
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="h-name" class="col-sm-4 col-form-label"
+                          >GEO Location
+                        </label>
+                        <div class="col-sm-8">
+                          <div
+                            class="d-flex align-items-center justify-content-center position-relative"
+                          >
+                            <input
+                              type="text"
+                              readonly
+                              class="form-control"
+                              id="h-name"
+                              value="www.google.com/maps/dir/23.83872"
+                            />
+                            <span class="location-pin">
+                              <img
+                                class="img-fluid"
+                                src="./../assets/images/pin-location.png"
+                                alt=""
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="d-flex profile-btn">
+                        <button type="submit" class="btn cancel">Cancel</button>
+                        <button type="submit" class="btn update">Update</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="./../assets/js/jQuery-v3.6.3.js"></script>
+    <script src="./../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./../assets/js/main.js"></script>
+  </body>
+</html>
