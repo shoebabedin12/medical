@@ -1,0 +1,59 @@
+/* font-family import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family import */
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  padding-top: 23px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+/* common css */
+
+/* variable  css */
+:root {
+  --black: #000;
+  --bg: #fff;
+  --danger-bg: rgba(243, 3, 3, 0.89);
+  --success-bg: rgba(9, 173, 65, 0.89);
+  --active-bg: #edbb70;
+  --Secondary-bg: #d9d9d9;
+  --info-bg: #18a0fb;
+  --warning-bg: rgba(227, 119, 19, 0.89);
+  --border-color: rgba(0, 0, 0, 0.56);
+  --text-black: rgba(0, 0, 0, 0.8);
+  --text-primary: rgba(23, 53, 132, 0.8);
+  --text-primary-1: rgba(29, 25, 207, 0.8);
+  --text-success: rgba(48, 156, 91, 0.8);
+  --rounded-5: 5px;
+  --letter-spacing: -0.015em;
+}
+/* variable  css */
+
+/* navbar */
+.navbar {
+  border: 1px solid var(--border-color);
+}
+.navbar .collapse form {
+  gap: 39px;
+}
+.navbar .collapse form .btn {
+  border: 1px solid rgba(0, 0, 0, 0.44);
+  border-radius: 6px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  color: #0f0202;
+}
+/* navbar */
