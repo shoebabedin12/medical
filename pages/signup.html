@@ -30,12 +30,26 @@
                 Medical Report Maker
               </h2>
               <form class="d-flex" role="search">
-                <button class="btn btn-outline-success" type="submit">
+                <!-- <button class="btn btn-outline-success" type="submit">
                   Sign In
                 </button>
                 <button class="btn btn-outline-success" type="submit">
                   Sign Up
-                </button>
+                </button> -->
+                <a
+                  href="./signin.html"
+                  class="btn btn-outline-success"
+                  type="submit"
+                >
+                  Sign In
+                </a>
+                <a
+                  href="./signup.html"
+                  class="btn btn-outline-success"
+                  type="submit"
+                >
+                  Sign Up
+                </a>
               </form>
             </div>
           </div>
@@ -44,27 +58,12 @@
       <section class="auth">
         <form>
           <h2 class="auth_title">Sign up</h2>
-          <div class="mb-3 position-relative">
-            <select class="form-control custom_input" name="" id="">
+          <div class="mb-3">
+            <select id="disabledSelect" class="form-select custom_input">
               <option selected>Select User Type</option>
               <option value="hospital">Hospital</option>
               <option value="doctor">Doctor</option>
             </select>
-            <span class="dropdown-icon">
-              <svg
-                width="32"
-                height="21"
-                viewBox="0 0 32 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M28.24 3.4155e-07L16 12.9798L3.76 2.56526e-06L2.24355e-06 3.99595L16 21L32 3.99595L28.24 3.4155e-07Z"
-                  fill="#0B0101"
-                  fill-opacity="0.46"
-                />
-              </svg>
-            </span>
           </div>
           <div class="mb-3">
             <input

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../assets/css/datatables.min.css" />
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <section class="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand opacity-0" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <h2 class="navbar-nav mx-auto mb-2 mb-lg-0">
+                Medical Report Maker
+              </h2>
+              <div class="d-flex align-items-center is-auth">
+                <a href="./" class="">
+                  <img
+                    class="img-fluid"
+                    src="./../assets/images/profile.png"
+                    alt=""
+                  />
+                  X Hospital Pvt. Ltd
+                </a>
+                <a href="./" class=""> Sign Out </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <div class="dashboard">
+        <div class="custom-container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div>
+                <ul class="side_nav">
+                  <li class="">
+                    <a href="./../index.html">Dashboard</a>
+                  </li>
+                  <li class="">
+                    <a href="./add-new-report.html">Add New Report</a>
+                  </li>
+                  <li class="active">
+                    <a href="./send-report.html">Sent Reports</a>
+                  </li>
+                  <li>
+                    <a href="#">Completed Reports</a>
+                  </li>
+                  <li>
+                    <a href="#">All Reports</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#">Help</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="add-new-report">
+                <div class="report-body">
+                  <h2 class="profile-heading">Sent Reports</h2>
+                  <div class="data-table-filter">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="mb-5 row">
+                          <label for="h-name" class="col-sm-4 col-form-label"
+                            >Search Report
+                          </label>
+                          <div class="col-sm-8">
+                            <input
+                              type="password"
+                              class="form-control search"
+                              id="h-name"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="mb-5 row">
+                          <label for="h-name" class="col-sm-4 col-form-label"
+                            >By Doctor</label
+                          >
+                          <div class="col-sm-8">
+                            <select
+                              id="disabledSelect"
+                              class="form-select custom_input"
+                            >
+                              <option selected>Select One</option>
+                              <option value="hospital">Male</option>
+                              <option value="doctor">Female</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="mb-5 row">
+                          <label for="h-name" class="col-sm-4 col-form-label"
+                            >By Date</label
+                          >
+                          <div class="col-sm-8 position-relative">
+                            <input
+                              type="date"
+                              class="form-control date"
+                              id="h-name"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <table id="example" class="cell-border" style="width: 100%">
+                    <thead class="">
+                      <tr>
+                        <th class=""><span class="">Report ID</span></th>
+                        <th class=""><span class="">Patient Name</span></th>
+                        <th class=""><span class="">Department</span></th>
+                        <th class=""><span class="">Prefered Doctor</span></th>
+                        <th class=""><span class="">Action</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span>RID011</span></td>
+                        <td><span>Miss. Jahanara Begum</span></td>
+                        <td><span>Dept. of Radiology & Imaging</span></td>
+                        <td><span>Dr. Monjurul Alam</span></td>
+                        <td>
+                          <a href="./report-edit.html"
+                            ><img src="./../assets/images/edit.png" alt=""
+                          /></a>
+                          <img src="./../assets/images/eye.png" alt="" />
+                          <img
+                            src="./../assets/images/delete-button.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span>RID011</span></td>
+                        <td><span>Miss. Jahanara Begum</span></td>
+                        <td><span>Dept. of Radiology & Imaging</span></td>
+                        <td><span>Dr. Monjurul Alam</span></td>
+                        <td>
+                          <a href="./report-edit.html"
+                            ><img src="./../assets/images/edit.png" alt=""
+                          /></a>
+                          <img src="./../assets/images/eye.png" alt="" />
+                          <img
+                            src="./../assets/images/delete-button.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span>RID011</span></td>
+                        <td><span>Miss. Jahanara Begum</span></td>
+                        <td><span>Dept. of Radiology & Imaging</span></td>
+                        <td><span>Dr. Monjurul Alam</span></td>
+                        <td>
+                          <a href="./report-edit.html"
+                            ><img src="./../assets/images/edit.png" alt=""
+                          /></a>
+                          <img src="./../assets/images/eye.png" alt="" />
+                          <img
+                            src="./../assets/images/delete-button.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span>RID011</span></td>
+                        <td><span>Miss. Jahanara Begum</span></td>
+                        <td><span>Dept. of Radiology & Imaging</span></td>
+                        <td><span>Dr. Monjurul Alam</span></td>
+                        <td>
+                          <a href="./report-edit.html"
+                            ><img src="./../assets/images/edit.png" alt=""
+                          /></a>
+                          <img src="./../assets/images/eye.png" alt="" />
+                          <img
+                            src="./../assets/images/delete-button.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="./../assets/js/jQuery-v3.6.3.js"></script>
+    <script src="./../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./../assets/js/datatables.min.js"></script>
+    <script src="./../assets/js/main.js"></script>
+  </body>
+</html>

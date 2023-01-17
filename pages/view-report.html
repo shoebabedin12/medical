@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../assets/css/datatables.min.css" />
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <section class="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand opacity-0" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <h2 class="navbar-nav mx-auto mb-2 mb-lg-0">
+                Medical Report Maker
+              </h2>
+              <div class="d-flex align-items-center is-auth">
+                <a href="./" class="">
+                  <img
+                    class="img-fluid"
+                    src="./../assets/images/profile.png"
+                    alt=""
+                  />
+                  X Hospital Pvt. Ltd
+                </a>
+                <a href="./" class=""> Sign Out </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <div class="dashboard">
+        <div class="custom-container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div>
+                <ul class="side_nav">
+                  <li class="">
+                    <a href="./../index.html">Dashboard</a>
+                  </li>
+                  <li class="">
+                    <a href="./add-new-report.html">Add New Report</a>
+                  </li>
+                  <li class="">
+                    <a href="./send-report.html">Sent Reports</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">Completed Reports</a>
+                  </li>
+                  <li>
+                    <a href="#">All Reports</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#">Help</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="view-report">
+                <div class="row align-items-center">
+                  <div class="col-lg-2"></div>
+                  <div class="col-lg-8">
+                    <h4 class="heading">Department of Radiology & Imaging</h4>
+                  </div>
+                  <div class="col-lg-2">
+                    <a class="print-btn" href="#">PRINT</a>
+                  </div>
+                  <div class="col-12">
+                    <table>
+                      <tr>
+                        <td><h5>Report ID</h5></td>
+                        <td><p>RID010</p></td>
+                        <td><h5>Patient Name</h5></td>
+                        <td><p>Miss. Saiyra Banu</p></td>
+                      </tr>
+                      <tr>
+                        <td><h5>Report Date</h5></td>
+                        <td><p>14/11/2022</p></td>
+                        <td><h5>Age</h5></td>
+                        <td><p>27</p></td>
+                        <td><h5>Gender</h5></td>
+                        <td><p>Female</p></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h4>CHEST AP VIEW</h4>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="./../assets/js/jQuery-v3.6.3.js"></script>
+    <script src="./../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./../assets/js/datatables.min.js"></script>
+    <script src="./../assets/js/main.js"></script>
+  </body>
+</html>
