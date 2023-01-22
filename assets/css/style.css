@@ -406,7 +406,7 @@ input:focus-visible {
 }
 #example thead tr th {
   /* border-top: 1px solid rgba(0, 0, 0, 0.5); */
-  padding: 5px 10px;
+  padding: 5px 4px;
 }
 #example thead tr th:first-child {
   /* border-left: 1px solid rgba(0, 0, 0, 0.5); */
@@ -423,11 +423,11 @@ input:focus-visible {
   display: block;
   text-align: center;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 20px;
   letter-spacing: -0.015em;
   color: rgba(0, 0, 0, 0.8);
-  padding: 12px 24px;
+  padding: 12px 14px;
 }
 #example tbody tr {
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -442,6 +442,10 @@ input:focus-visible {
 #example tbody tr td:last-child {
   text-align: center;
   padding: 7px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 #example tbody tr td img {
   margin-right: 5px;
@@ -482,44 +486,48 @@ input:focus-visible {
   border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 8px 13px;
 }
-.dashboard .view-report table {
+
+.dashboard .report_edit {
 }
-.dashboard .view-report table {
+
+.dashboard .report_edit {
 }
-.dashboard .view-report table {
+
+.dashboard .report_edit {
 }
-.dashboard .view-report table {
+
+.dashboard .report_edit {
 }
-.dashboard .view-report {
+
+.dashboard .report_edit {
 }
-.dashboard .view-report {
+
+.dashboard .report_edit {
 }
-.dashboard .view-report {
+
+.dashboard .report_edit {
 }
-.dashboard .view-report {
+
+.dashboard .report_edit {
 }
-.dashboard .view-report {
+
+.dashboard .report_edit {
 }
-.dashboard .view-report {
+
+.dashboard .report_edit {
 }
-.dashboard .view-report {
-}
-.dashboard .view-report {
-}
-.dashboard .view-report {
-}
-.dashboard .view-report {
-}
-.dashboard .view-report {
-}
-.dashboard .view-report {
-}
-.dashboard .view-report {
-}
-.dashboard {
+
+.dashboard .report_edit {
 }
 .dashboard {
 }
 .dashboard {
 }
 /* dashboard */
+
+/* responsive */
+@media (min-width: 1025px) and (max-width: 1120px) {
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+}
+/* responsive */
