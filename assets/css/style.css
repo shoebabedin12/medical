@@ -453,7 +453,6 @@ input:focus-visible {
 /* custom data table design */
 .dashboard .view-report {
   max-width: 997px;
-  border: 1px solid red;
   margin: 10px auto;
   height: 100%;
   padding-left: 95px;
@@ -486,43 +485,145 @@ input:focus-visible {
   border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 8px 13px;
 }
-
-.dashboard .report_edit {
+.dashboard .view-report table h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+}
+.dashboard .view-report table p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
 }
 
-.dashboard .report_edit {
+.dashboard .view-report table table tr td {
+  padding-left: 0;
+}
+.dashboard .view-report table table h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  white-space: pre;
+}
+.dashboard .view-report table table p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+.dashboard .view-report .reported .reportedBY {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+}
+.dashboard .view-report .reported .d-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 16px;
+}
+.dashboard .view-report .reported p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+}
+.dashboard .view-report .reported .checked-by-medical {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
 }
 
-.dashboard .report_edit {
+.modal .modal-title,
+.modal .modal-body h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
 }
 
-.dashboard .report_edit {
+.modal .no {
+  background: rgba(243, 3, 3, 0.89);
+  border: 0.5px solid #1e1919;
+  border-radius: 5px;
+}
+.modal .yes {
+  background: rgba(9, 173, 65, 0.89);
+  border: 0.5px solid #1e1919;
+  border-radius: 5px;
+}
+.modal .modal-footer .btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  max-width: 124px;
+  width: 100%;
+}
+.dashboard .admin .add-more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: auto;
+  margin-left: auto;
+  background: rgba(9, 173, 65, 0.89);
+  border: 0.5px solid #1e1919;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-indent: 10px;
+  color: #ffffff;
+}
+.dashboard .admin .add-degree {
+  background: rgba(227, 119, 19, 0.89);
+  border: 0.5px solid #1e1919;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.dashboard .admin {
+}
+.dashboard .admin {
+}
+.dashboard .admin {
+}
+.dashboard .admin {
+}
+.dashboard .admin {
+}
+.dashboard .admin {
+}
+.dashboard .admin {
+}
+.dashboard .admin {
 }
 
-.dashboard .report_edit {
-}
-
-.dashboard .report_edit {
-}
-
-.dashboard .report_edit {
-}
-
-.dashboard .report_edit {
-}
-
-.dashboard .report_edit {
-}
-
-.dashboard .report_edit {
-}
-
-.dashboard .report_edit {
-}
-.dashboard {
-}
-.dashboard {
-}
 /* dashboard */
 
 /* responsive */

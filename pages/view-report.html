@@ -31,7 +31,7 @@
                 Medical Report Maker
               </h2>
               <div class="d-flex align-items-center is-auth">
-                <a href="./" class="">
+                <a href="./profile.html" class="">
                   <img
                     class="img-fluid"
                     src="./../assets/images/profile.png"
@@ -39,7 +39,7 @@
                   />
                   X Hospital Pvt. Ltd
                 </a>
-                <a href="./" class=""> Sign Out </a>
+                <a href="./signin.html" class=""> Sign Out </a>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@
                     <a href="./add-new-report.html">Add New Report</a>
                   </li>
                   <li class="">
-                    <a href="./send-report.html">Sent Reports</a>
+                    <a href="./send-reports.html">Sent Reports</a>
                   </li>
                   <li class="active">
                     <a href="./complete-reports.html">Completed Reports</a>
@@ -76,7 +76,13 @@
               </div>
             </div>
             <div class="col-lg-9">
-              <div class="view-report">
+              <div
+                class="view-report"
+                style="
+                  background: #ffffff;
+                  border: 1px solid rgba(0, 0, 0, 0.5);
+                "
+              >
                 <div class="row align-items-center">
                   <div class="col-lg-2"></div>
                   <div class="col-lg-8">
@@ -86,28 +92,98 @@
                     <a class="print-btn" href="#">PRINT</a>
                   </div>
                   <div class="col-12">
-                    <table>
+                    <table class="table table-responsive">
                       <tr>
-                        <td><h5>Report ID</h5></td>
-                        <td><p>RID010</p></td>
-                        <td><h5>Patient Name</h5></td>
-                        <td><p>Miss. Saiyra Banu</p></td>
+                        <td colspan="2"><h5>Report ID</h5></td>
+                        <td colspan="4"><p>RID010</p></td>
+                        <td colspan="2"><h5>Patient Name</h5></td>
+                        <td colspan="4"><p>Miss. Saiyra Banu</p></td>
                       </tr>
                       <tr>
-                        <td><h5>Report Date</h5></td>
-                        <td><p>14/11/2022</p></td>
-                        <td><h5>Age</h5></td>
-                        <td><p>27</p></td>
-                        <td><h5>Gender</h5></td>
-                        <td><p>Female</p></td>
+                        <td colspan="2"><h5>Report Date</h5></td>
+                        <td colspan="2"><p>14/11/2022</p></td>
+                        <td colspan="2"><h5>Age</h5></td>
+                        <td colspan="2"><p>27</p></td>
+                        <td colspan="2"><h5>Gender</h5></td>
+                        <td colspan="2"><p>Female</p></td>
                       </tr>
                       <tr>
-                        <td>
-                          <h4>CHEST AP VIEW</h4>
+                        <td colspan="12">
+                          <h5>CHEST AP VIEW</h5>
+                          <table class="border-0">
+                            <tr>
+                              <td scope="row" class="border-0">
+                                <h5>Bony thorax :</h5>
+                              </td>
+                              <td class="border-0">
+                                <p>Reveals no abnortnality.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="border-0">
+                                <h5>Diaphragm :</h5>
+                              </td>
+                              <td class="border-0">
+                                <p>
+                                  Normal in position, contour & definition.
+                                  Basal angles are free.
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="border-0 align-top">
+                                <h5>Heart :</h5>
+                              </td>
+                              <td class="border-0">
+                                <p>
+                                  Normal in transverse diameter. Dual chamber
+                                  permanent pacemaker . is noted in left
+                                  anterior chest wall. No break is noted in the
+                                  electrodes and tip of the electrodes placed
+                                  within the right ventricle and right antrum
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="border-0">
+                                <h5>Lung fields :</h5>
+                              </td>
+                              <td class="border-0">
+                                <p>Clear on both sides.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="row" class="border-0">
+                                <h5>Impression :</h5>
+                              </td>
+                              <td class="border-0">
+                                <p>As per description.</p>
+                              </td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                     </table>
                   </div>
+                  <div class="col-12 reported">
+                    <p class="reportedBY">Reported by Electronic Signature</p>
+                    <img
+                      class="img-fluid ms-5"
+                      src="./../assets/images/signature.png"
+                      alt=""
+                    />
+                    <h5 class="d-name">Dr. Monjurul Alam</h5>
+                    <p class="">MBBS, MD (Radiology & Imaging)</p>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <p class="">Radiologist</p>
+                      <h5 class="checked-by-medical">
+                        Checked by Medical Technologist
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="col-lg-6"></div>
                 </div>
               </div>
             </div>
