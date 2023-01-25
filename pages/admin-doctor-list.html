@@ -37,7 +37,7 @@
                     src="./../assets/images/profile.png"
                     alt=""
                   />
-                  X Hospital Pvt. Ltd
+                  Admin
                 </a>
                 <a href="./signin.html" class=""> Sign Out </a>
               </div>
@@ -55,40 +55,36 @@
                     <a href="./../index.html">Dashboard</a>
                   </li>
                   <li class="">
-                    <a href="./add-new-report.html">Add New Report</a>
+                    <a href="./add-new-report.html">Doctors</a>
                   </li>
                   <li class="active">
-                    <a href="./send-report.html">Sent Reports</a>
+                    <a href="./send-report.html">Hospitals</a>
                   </li>
                   <li>
-                    <a href="./complete-reports.html">Completed Reports</a>
+                    <a href="./admin-new-user-request.html"
+                      >New User Requests</a
+                    >
                   </li>
                   <li>
-                    <a href="./all-reports.html">All Reports</a>
-                  </li>
-                  <li>
-                    <a href="#">FAQ</a>
-                  </li>
-                  <li>
-                    <a href="#">Help</a>
+                    <a href="./all-reports.html">Seetings</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-9">
-              <div class="add-new-report">
+              <div class="add-new-report admin">
                 <div class="report-body">
-                  <h2 class="profile-heading">Sent Reports</h2>
+                  <h2 class="profile-heading">Doctors List</h2>
                   <div class="data-table-filter">
                     <div class="row">
                       <div class="col-lg-4">
                         <div class="mb-5 row">
                           <label for="h-name" class="col-sm-4 col-form-label"
-                            >Search Report
+                            >Search User
                           </label>
                           <div class="col-sm-8">
                             <input
-                              type="password"
+                              type="text"
                               class="form-control search"
                               id="h-name"
                             />
@@ -98,7 +94,7 @@
                       <div class="col-lg-4">
                         <div class="mb-5 row">
                           <label for="h-name" class="col-sm-4 col-form-label"
-                            >By Doctor</label
+                            >By Status</label
                           >
                           <div class="col-sm-8">
                             <select
@@ -114,16 +110,13 @@
                       </div>
                       <div class="col-lg-4">
                         <div class="mb-5 row">
-                          <label for="h-name" class="col-sm-4 col-form-label"
-                            >By Date</label
+                          <a
+                            href="./admin-add-doctors.html"
+                            class="btn add-more-btn"
                           >
-                          <div class="col-sm-8 position-relative">
-                            <input
-                              type="date"
-                              class="form-control date"
-                              id="h-name"
-                            />
-                          </div>
+                            <img src="./../assets/images/plus.png" alt="" />
+                            Add New
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -135,108 +128,30 @@
                   >
                     <thead class="">
                       <tr>
-                        <th class=""><span class="">Report ID</span></th>
-                        <th class=""><span class="">Patient Name</span></th>
-                        <th class=""><span class="">Department</span></th>
-                        <th class=""><span class="">Prefered Doctor</span></th>
+                        <th class=""><span class="">User ID</span></th>
+                        <th class=""><span class="">User Name</span></th>
+                        <th class=""><span class="">User Type</span></th>
+                        <th class=""><span class="">Email</span></th>
+                        <th class=""><span class="">Phone</span></th>
+                        <th class=""><span class="">Status</span></th>
                         <th class=""><span class="">Action</span></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td><span>RID011</span></td>
-                        <td><span>Miss. Jahanara Begum</span></td>
-                        <td><span>Dept. of Radiology & Imaging</span></td>
-                        <td><span>Dr. Monjurul Alam</span></td>
+                        <td><span>DID001</span></td>
+                        <td><span>Dr. Ishrat jahan</span></td>
+                        <td><span>Doctor</span></td>
+                        <td><span>ishrat@gmail.com</span></td>
+                        <td><span>01743605622</span></td>
+                        <td><span>Inactive</span></td>
                         <td>
                           <a href="./report-edit.html"
                             ><img src="./../assets/images/edit.png" alt=""
                           /></a>
-                          <a href="./view-report.html"
+                          <a href="./user-profile.html"
                             ><img src="./../assets/images/eye.png" alt=""
                           /></a>
-                          <a
-                            data-bs-toggle="modal"
-                            href="#exampleModalToggle"
-                            role="button"
-                          >
-                            <img
-                              src="./../assets/images/delete-button.png"
-                              alt=""
-                            />
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><span>RID011</span></td>
-                        <td><span>Miss. Jahanara Begum</span></td>
-                        <td><span>Dept. of Radiology & Imaging</span></td>
-                        <td><span>Dr. Monjurul Alam</span></td>
-                        <td>
-                          <a href="./report-edit.html"
-                            ><img src="./../assets/images/edit.png" alt=""
-                          /></a>
-                          <a href="./view-report.html"
-                            ><img src="./../assets/images/eye.png" alt=""
-                          /></a>
-                          <a
-                            data-bs-toggle="modal"
-                            href="#exampleModalToggle"
-                            role="button"
-                          >
-                            <img
-                              src="./../assets/images/delete-button.png"
-                              alt=""
-                            />
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><span>RID011</span></td>
-                        <td><span>Miss. Jahanara Begum</span></td>
-                        <td><span>Dept. of Radiology & Imaging</span></td>
-                        <td><span>Dr. Monjurul Alam</span></td>
-                        <td>
-                          <a href="./report-edit.html"
-                            ><img src="./../assets/images/edit.png" alt=""
-                          /></a>
-                          <a href="./view-report.html"
-                            ><img src="./../assets/images/eye.png" alt=""
-                          /></a>
-                          <a
-                            data-bs-toggle="modal"
-                            href="#exampleModalToggle"
-                            role="button"
-                          >
-                            <img
-                              src="./../assets/images/delete-button.png"
-                              alt=""
-                            />
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><span>RID011</span></td>
-                        <td><span>Miss. Jahanara Begum</span></td>
-                        <td><span>Dept. of Radiology & Imaging</span></td>
-                        <td><span>Dr. Monjurul Alam</span></td>
-                        <td>
-                          <a href="./report-edit.html"
-                            ><img src="./../assets/images/edit.png" alt=""
-                          /></a>
-                          <a href="./view-report.html"
-                            ><img src="./../assets/images/eye.png" alt=""
-                          /></a>
-                          <a
-                            data-bs-toggle="modal"
-                            href="#exampleModalToggle"
-                            role="button"
-                          >
-                            <img
-                              src="./../assets/images/delete-button.png"
-                              alt=""
-                            />
-                          </a>
                         </td>
                       </tr>
                     </tbody>
