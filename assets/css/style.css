@@ -651,13 +651,102 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   align-items: center;
   color: #ffffff;
 }
-.dashboard .admin {
+
+.dashboard .doctor {
+  padding: 5px;
 }
-.dashboard .admin {
+.dashboard .doctor .doctor-report-heading {
+  padding-top: 39px;
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
 }
-.dashboard .admin {
+.dashboard .doctor .img {
+  overflow: hidden;
 }
-.dashboard .admin {
+.dashboard .doctor .img img {
+  width: 100%;
+  height: 100%;
+}
+.dashboard .doctor .img-ctrl-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 26px;
+}
+.dashboard .doctor .img-ctrl-btn .btn {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 24px;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.dashboard .doctor .img-ctrl-btn .btn.minus {
+  background-color: var(--danger-bg);
+}
+.dashboard .doctor .img-ctrl-btn .btn.plus {
+  background-color: var(--success-bg);
+}
+.dashboard .doctor .doctor-report-body {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.dashboard .doctor .doctor-report-body {
+}
+.dashboard .doctor .doctor-report-body {
+}
+.dashboard .doctor .doctor-report-body {
+}
+.dashboard .doctor .doctor-report-body {
+}
+.dashboard .doctor .doctor-report-body {
+}
+.dashboard .doctor .doctor-report-body {
+}
+.dashboard .doctor .doctor-report-body {
+}
+.dashboard .doctor .doctor-report-body {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
+}
+.dashboard .doctor {
 }
 
 /* dashboard */

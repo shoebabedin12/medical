@@ -12,7 +12,16 @@ $(document).ready(function () {
   //     $(".status-dropdown").val(status);
   //     dataTable.column(5).search(status).draw();
   //   });
+  $("#panzoom").panzoom({
+    $zoomIn: $(".zoom-in"),
+    $zoomOut: $(".zoom-out"),
+    $zoomRange: $(".zoom-range"),
+    $reset: $(".reset"),
+    
+    contain: 'invert',
+  });
 });
+
 
 function strike(e) {
   var data = $(e).attr("class");
@@ -43,3 +52,5 @@ function add() {
     '<div class="row position-relative"><div class="col-lg-6"><div class="mb-5 row"><label for="h-name" class="col-sm-4 col-form-label">Degree</label><div class="col-sm-8 position-relative"><input type="text" class="form-control" id="h-name" placeholder="Degree"/></div></div></div><div class="col-lg-6"><div class="mb-5 row"><label for="h-name" class="col-sm-4 col-form-label">Specialization </label><div class="col-sm-8 position-relative"><input type="text" class="form-control" id="h-name" placeholder="Specialization"/></div></div></div><div class="close-icon"><span class="close-degree" onclick="strike(this)"><p>X</p></span></div></div>'
   );
 }
+
+

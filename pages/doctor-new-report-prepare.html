@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../assets/css/datatables.min.css" />
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <section class="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand opacity-0" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <h2 class="navbar-nav mx-auto mb-2 mb-lg-0">
+                Medical Report Maker
+              </h2>
+              <div class="d-flex align-items-center is-auth">
+                <a href="./profile.html" class="">
+                  <img
+                    class="img-fluid"
+                    src="./../assets/images/profile.png"
+                    alt=""
+                  />
+                  Dr. Monjurul Alom
+                </a>
+                <a href="./signin.html" class=""> Sign Out </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <div class="dashboard">
+        <div class="custom-container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div>
+                <ul class="side_nav">
+                  <li class="">
+                    <a href="./../index.html">Dashboard</a>
+                  </li>
+                  <li class="">
+                    <a href="./add-new-report.html">Report Formats</a>
+                  </li>
+                  <li class="active">
+                    <a href="./send-report.html">Received Reports</a>
+                  </li>
+                  <li>
+                    <a href="./complete-reports.html">Completed Reports</a>
+                  </li>
+                  <li>
+                    <a href="./all-reports.html">All Reports</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#">Help</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="add-new-report admin doctor">
+                <div class="row">
+                  <div class="col-lg-4 text-center">
+                    <h2 class="doctor-report-heading">Report Image</h2>
+                    <div class="img">
+                      <div id="panzoom">
+                        <img
+                          class="target img-fluid"
+                          src="./../assets/images/report.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="img-ctrl-btn">
+                      <button class="btn minus zoom-out">-</button>
+                      <button class="btn plus zoom-in">+</button>
+                      <button class="btn plus reset">Reset</button>
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="doctor-report-body">
+                      <h2 class="profile-heading">New Report Prepare</h2>
+                      <table>
+                        <tr>
+                          <td><span class="title"></span></td>
+                          <td><span></span></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div
+      class="modal fade bg-white"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center border-0">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+              Do you want to delete the report?
+            </h1>
+          </div>
+          <div class="modal-body"><h1>Confirm</h1></div>
+          <div class="modal-footer border-0 justify-content-center">
+            <button
+              type="button"
+              class="btn no"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              No
+            </button>
+            <button
+              class="btn yes"
+              data-bs-target="#exampleModalToggle2"
+              data-bs-toggle="modal"
+            >
+              Yes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+    <!-- js -->
+    <!-- <script src="./../assets/js/jQuery-v3.6.3.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.panzoom/2.0.6/jquery.panzoom.min.js"></script>
+    <script src="./../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./../assets/js/datatables.min.js"></script>
+    <script src="./../assets/js/main.js"></script>
+  </body>
+</html>
