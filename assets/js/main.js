@@ -17,11 +17,15 @@ $(document).ready(function () {
     $zoomOut: $(".zoom-out"),
     $zoomRange: $(".zoom-range"),
     $reset: $(".reset"),
-    
-    contain: 'invert',
+
+    contain: "invert"
+  });
+
+  // Summernote
+  $(".summernote").summernote({
+        height: 300
   });
 });
-
 
 function strike(e) {
   var data = $(e).attr("class");
@@ -54,3 +58,7 @@ function add() {
 }
 
 
+// ck editor
+ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
+  console.error(error);
+});

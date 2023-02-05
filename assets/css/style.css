@@ -695,58 +695,86 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .dashboard .doctor .img-ctrl-btn .btn.plus {
   background-color: var(--success-bg);
 }
+.dashboard .doctor .doctor-report-body .profile-heading {
+  padding-top: 0;
+}
+
 .dashboard .doctor .doctor-report-body {
   border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 41px 49px;
 }
-.dashboard .doctor .doctor-report-body {
+.dashboard .doctor .doctor-report-body .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
 }
-.dashboard .doctor .doctor-report-body {
+.dashboard .doctor .doctor-report-body .name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
 }
-.dashboard .doctor .doctor-report-body {
+.ck-editor__editable[role="textbox"] {
+  /* editing area */
+  min-height: 200px;
 }
-.dashboard .doctor .doctor-report-body {
+.ck-content .image {
+  /* block images */
+  max-width: 80%;
+  margin: 20px auto;
 }
-.dashboard .doctor .doctor-report-body {
+.dashboard .doctor .doctor-report-body form {
+  border: 0px;
 }
-.dashboard .doctor .doctor-report-body {
+.dashboard .doctor .doctor-report-body .profile-btn {
+  justify-content: flex-end;
+  gap: 43px;
+  margin-top: 31px;
 }
-.dashboard .doctor .doctor-report-body {
+.dashboard .doctor .doctor-report-body .profile-btn .cancel {
+  background: rgba(243, 3, 3, 0.89);
+  border: 0.5px solid #1e1919;
+  border-radius: 5px;
 }
-.dashboard .doctor .doctor-report-body {
+.dashboard .doctor .doctor-report-body .profile-btn .update {
+  background: rgba(9, 173, 65, 0.89);
+  border: 0.5px solid #1e1919;
+  border-radius: 5px;
 }
-.dashboard .doctor {
+
+.dashboard .complete-report .doctor-report-body .report-body {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  max-width: 997px;
+  margin: 0 auto;
+  padding: 21px 110px;
 }
-.dashboard .doctor {
+.dashboard .complete-report table tr td p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-.dashboard .doctor {
+.dashboard .complete-report {
 }
-.dashboard .doctor {
+.dashboard .complete-report {
 }
-.dashboard .doctor {
+.dashboard .complete-report {
 }
-.dashboard .doctor {
+.dashboard .complete-report {
 }
-.dashboard .doctor {
+.dashboard .complete-report {
 }
-.dashboard .doctor {
+.dashboard .complete-report {
 }
-.dashboard .doctor {
+.dashboard .complete-report {
 }
-.dashboard .doctor {
+.dashboard .complete-report {
 }
-.dashboard .doctor {
+.dashboard .complete-report {
 }
-.dashboard .doctor {
-}
-.dashboard .doctor {
-}
-.dashboard .doctor {
-}
-.dashboard .doctor {
-}
-.dashboard .doctor {
-}
-.dashboard .doctor {
+.dashboard .complete-report {
 }
 
 /* dashboard */

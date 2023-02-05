@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../assets/css/datatables.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="./../assets/plugin/summernote-0.8.18-dist/summernote-bs4.css"
+    /> -->
+
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+
+    <!-- include libraries(jQuery, bootstrap) -->
+
+    <!-- <script src="./../assets/js/jQuery-v3.6.3.js"></script> -->
+
+    <!-- include summernote css/js -->
+    <!-- <link
+      rel="stylesheet"
+      href="./../assets/plugin/summernote-0.8.18-dist/summernote-lite.css"
+    /> -->
+  </head>
+  <body>
+    <div class="main">
+      <section class="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand opacity-0" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <h2 class="navbar-nav mx-auto mb-2 mb-lg-0">
+                Medical Report Maker
+              </h2>
+              <div class="d-flex align-items-center is-auth">
+                <a href="./profile.html" class="">
+                  <img
+                    class="img-fluid"
+                    src="./../assets/images/profile.png"
+                    alt=""
+                  />
+                  Dr. Monjurul Alom
+                </a>
+                <a href="./signin.html" class=""> Sign Out </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <div class="dashboard">
+        <div class="custom-container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div>
+                <ul class="side_nav">
+                  <li class="">
+                    <a href="./../index.html">Dashboard</a>
+                  </li>
+                  <li class="">
+                    <a href="./add-new-report.html">Report Formats</a>
+                  </li>
+                  <li class="active">
+                    <a href="./send-report.html">Received Reports</a>
+                  </li>
+                  <li>
+                    <a href="./complete-reports.html">Completed Reports</a>
+                  </li>
+                  <li>
+                    <a href="./all-reports.html">All Reports</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#">Help</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="add-new-report admin doctor complete-report">
+                <div class="doctor-report-body">
+                  <div class="report-body">
+                    <h2 class="profile-heading">New Report Prepare</h2>
+                    <table class="table table-bordered">
+                      <tr>
+                        <td><span class="title">Report ID</span></td>
+                        <td><span class="name">RID010</span></td>
+                        <td colspan="2">
+                          <span class="title">Patient Name</span>
+                        </td>
+                        <td colspan="2">
+                          <span class="name">Miss. Saiyra Banu</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="title">Report Date</span></td>
+                        <td><span class="name">14/11/2022</span></td>
+                        <td><span class="title">Age</span></td>
+                        <td><span class="name">27</span></td>
+                        <td><span class="title">Gender</span></td>
+                        <td><span class="name">Female</span></td>
+                      </tr>
+                      <tr>
+                        <td colspan="6">
+                          <h5>CHEST AP VIEW</h5>
+                          <p><b>Bony thorax :</b> Reveals no abnortnality.</p>
+                          <p>
+                            <b>Diaphragm : </b>Normal in position, contour &
+                            definition. Basal angles are free.
+                          </p>
+                          <p>
+                            <b>Heart :</b>
+                            <span class="d-block">
+                              Normal in transverse diameter. Dual chamber
+                              permanent pacemaker . is noted in left anterior
+                              chest wall. No break is noted in the electrodes
+                              and tip of the electrodes placed within the right
+                              ventricle and right antrum
+                            </span>
+                          </p>
+                          <p><b>Lung fields :</b> Clear on both sides.</p>
+                          <p><b>Impression :</b> As per description.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <!-- <script src="./../assets/js/jQuery-v3.6.3.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.panzoom/2.0.6/jquery.panzoom.min.js"></script>
+    <script src="./../assets/js/datatables.min.js"></script>
+    <!-- <script src="./../assets/plugin/summernote-0.8.18-dist/summernote-lite.js"></script> -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.0/classic/ckeditor.js"></script>
+
+    <script src="./../assets/js/main.js"></script>
+  </body>
+</html>
