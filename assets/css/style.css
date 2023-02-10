@@ -89,7 +89,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .is-auth {
   gap: 35px;
 }
-.is-auth a {
+.is-auth a,
+.is-auth input,
+.is-auth button {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
