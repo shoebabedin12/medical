@@ -7,7 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./../assets/css/datatables.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="./../assets/plugin/summernote-0.8.18-dist/summernote-bs4.css"
+    /> -->
+
     <link rel="stylesheet" href="./../assets/css/style.css" />
+
+    <!-- include libraries(jQuery, bootstrap) -->
+
+    <!-- <script src="./../assets/js/jQuery-v3.6.3.js"></script> -->
+
+    <!-- include summernote css/js -->
+    <!-- <link
+      rel="stylesheet"
+      href="./../assets/plugin/summernote-0.8.18-dist/summernote-lite.css"
+    /> -->
   </head>
   <body>
     <div class="main">
@@ -99,12 +114,82 @@
                   <div class="col-lg-8">
                     <div class="doctor-report-body">
                       <h2 class="profile-heading">New Report Prepare</h2>
-                      <table>
-                        <tr>
-                          <td><span class="title"></span></td>
-                          <td><span></span></td>
-                        </tr>
-                      </table>
+                      <div class="">
+                        <table class="table table-bordered">
+                          <tr>
+                            <td><span class="title">Report ID</span></td>
+                            <td><span class="name">RID010</span></td>
+                            <td colspan="2">
+                              <span class="title">Patient Name</span>
+                            </td>
+                            <td colspan="2">
+                              <span class="name">Miss. Saiyra Banu</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="title">Report Date</span></td>
+                            <td><span class="name">14/11/2022</span></td>
+                            <td><span class="title">Age</span></td>
+                            <td><span class="name">27</span></td>
+                            <td><span class="title">Gender</span></td>
+                            <td><span class="name">Female</span></td>
+                          </tr>
+                          <tr>
+                            <td colspan="6">
+                              <p></p>
+                            </td>
+                          </tr>
+                        </table>
+                        <form class="row">
+                          <div class="col-lg-6">
+                            <div class="mb-5 row">
+                              <label for="h-name" class="col-4 col-form-label"
+                                >Report Type *</label
+                              >
+                              <div class="col">
+                                <select
+                                  id="disabledSelect"
+                                  class="form-select custom_input"
+                                >
+                                  <option selected>Select One</option>
+                                  <option value="hospital">Male</option>
+                                  <option value="doctor">Female</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="mb-5 row">
+                              <label for="h-name" class="col-4 col-form-label"
+                                >Title *</label
+                              >
+                              <div class="col">
+                                <select
+                                  id="disabledSelect"
+                                  class="form-select custom_input"
+                                >
+                                  <option selected>Select One</option>
+                                  <option value="hospital">Male</option>
+                                  <option value="doctor">Female</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div id="editor"></div>
+                          </div>
+                          <div class="col-12">
+                            <div class="d-flex profile-btn">
+                              <button type="submit" class="btn cancel">
+                                Cancel
+                              </button>
+                              <button type="submit" class="btn update">
+                                Update
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -115,50 +200,15 @@
       </div>
     </div>
 
-    <!-- modal -->
-    <div
-      class="modal fade bg-white"
-      id="exampleModalToggle"
-      aria-hidden="true"
-      aria-labelledby="exampleModalToggleLabel"
-      tabindex="-1"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header justify-content-center border-0">
-            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
-              Do you want to delete the report?
-            </h1>
-          </div>
-          <div class="modal-body"><h1>Confirm</h1></div>
-          <div class="modal-footer border-0 justify-content-center">
-            <button
-              type="button"
-              class="btn no"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              No
-            </button>
-            <button
-              class="btn yes"
-              data-bs-target="#exampleModalToggle2"
-              data-bs-toggle="modal"
-            >
-              Yes
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- modal -->
     <!-- js -->
     <!-- <script src="./../assets/js/jQuery-v3.6.3.js"></script> -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.panzoom/2.0.6/jquery.panzoom.min.js"></script>
     <script src="./../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.panzoom/2.0.6/jquery.panzoom.min.js"></script>
     <script src="./../assets/js/datatables.min.js"></script>
+    <!-- <script src="./../assets/plugin/summernote-0.8.18-dist/summernote-lite.js"></script> -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.0/classic/ckeditor.js"></script>
+
     <script src="./../assets/js/main.js"></script>
   </body>
 </html>
