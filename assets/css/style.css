@@ -461,6 +461,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: center;
   gap: 19px;
 }
+#example tbody tr td.dataTables_empty{
+  display: table-cell;
+}
 #example tbody tr td img {
   margin-right: 5px;
 }
