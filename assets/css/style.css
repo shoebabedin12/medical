@@ -404,7 +404,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .dashboard .data-table-filter label {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.015em;
   color: rgba(0, 0, 0, 0.8);
@@ -460,7 +460,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 #example tbody tr td {
   border: 1px solid rgba(0, 0, 0, 0.5);
-  padding-left: 21px;
+  /* padding-left: 21px; */
 }
 #example tbody tr td:last-child {
   text-align: center;
@@ -909,7 +909,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .print {
     display: none;
   }
+  .report-body {
+    max-width: 997px;
+    margin: 0 auto;
+    padding: 40px 0px;
+  }
+  .print-hading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 18px;
+  }
+  .profile-heading {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: rgba(48, 156, 91, 0.8);
+    width: fit-content;
+    padding: 16px 60px;
+  }
+  .signature_medical {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
 }
+/* print overrides */
+
 /* responsive */
 @media (min-width: 1025px) and (max-width: 1120px) {
 }

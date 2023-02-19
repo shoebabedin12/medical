@@ -18,14 +18,17 @@ $(document).ready(function () {
     $zoomRange: $(".zoom-range"),
     $reset: $(".reset"),
 
-    contain: "invert"
+    contain: "invert",
   });
 
   // print
 
   $("#btn").on("click", function () {
+
     $("#printTable").print();
   });
+
+
 });
 
 function strike(e) {
