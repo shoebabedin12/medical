@@ -796,16 +796,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   line-height: 24px;
   letter-spacing: -0.015em;
   color: rgba(0, 0, 0, 0.8);
-  display: -webkit-box;
+  /* display: -webkit-box; */
 }
 .dashboard .complete-report table tr td p b {
-  display: block;
-  width: 15%;
+  /* display: block; */
+  /* width: 15%; */
   font-weight: 700;
 }
 .dashboard .complete-report table tr td p span {
-  display: block;
-  width: calc(100% - 16%);
+  /* display: block; */
+  /* width: calc(100% - 16%); */
 }
 .dashboard .complete-report .signature_medical {
   display: flex;
@@ -867,7 +867,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: fit-content;
   padding: 16px 60px;
 }
-.dashboard .hospital-report .print-hading button {
+.dashboard .hospital-report button {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -875,35 +875,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: rgba(29, 25, 207, 0.8);
   background-color: transparent;
   border: 0;
-  right: 0;
-  position: absolute;
-}
-.dashboard .hospital-report {
-}
-.dashboard .hospital-report {
-}
-.dashboard .hospital-report {
-}
-.dashboard .hospital-report {
-}
-.dashboard .hospital-report {
-}
-.dashboard .hospital-report {
-}
-.dashboard .hospital-report {
-}
-.dashboard .hospital-report {
-}
-.dashboard .hospital-report {
-}
-.dashboard .hospital-report {
-}
-.dashboard .hospital-report {
-}
-.dashboard .hospital-report {
 }
 
 /* dashboard */
+
 /* print */
 @media print {
   .print {
@@ -928,7 +903,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     line-height: 24px;
     letter-spacing: -0.015em;
     color: rgba(48, 156, 91, 0.8);
-    width: fit-content;
+    /* width: fit-content; */
     padding: 16px 60px;
   }
   .signature_medical {

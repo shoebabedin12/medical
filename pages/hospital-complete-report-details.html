@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./../assets/css/datatables.min.css" />
+    <link rel="stylesheet" href="./../assets/css/pdf.css" />
     <link rel="stylesheet" href="./../assets/css/style.css" />
   </head>
   <body>
@@ -80,13 +81,50 @@
                 class="add-new-report admin doctor complete-report hospital-report"
               >
                 <div class="doctor-report-body">
-                  <div class="report-body" id="printTable">
+                  <div
+                    class="d-flex align-items-center justify-content-end gap-4"
+                  >
+                    <button class="print" id="btn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-printer-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"
+                        />
+                        <path
+                          d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"
+                        />
+                      </svg>
+                      PRINT
+                    </button>
+                    <button id="pdfButton" class="download">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-filetype-pdf"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"
+                        />
+                      </svg>
+                      PDF Download
+                    </button>
+                  </div>
+
+                  <div class="report-body" id="generatePDF">
                     <div class="print-hading">
                       <h2 class="profile-heading">
                         Department of Radiology & Imaging
                       </h2>
-
-                      <button class="print" id="btn">PRINT</button>
                     </div>
                     <table class="table table-bordered">
                       <tr>
@@ -133,14 +171,24 @@
 
                     <div class="signature_medical">
                       <div class="signature">
-                        <p>Reported by Electronic Signature</p>
-                        <img src="./../assets/images/signature.png" alt="" />
-                        <h4>Dr. Monjurul Alam</h4>
-                        <h6>MBBS, MD (Radiology & Imaging)</h6>
-                        <h6>Radiologist</h6>
+                        <p class="signature-report-by">
+                          Reported by Electronic Signature
+                        </p>
+                        <img
+                          class="signature-image"
+                          src="./../assets/images/signature.png"
+                          alt=""
+                        />
+                        <h4 class="signature-doctor">Dr. Monjurul Alam</h4>
+                        <h6 class="signature-doctor-degree">
+                          MBBS, MD (Radiology & Imaging)
+                        </h6>
+                        <h6 class="signature-doctor-specialist">Radiologist</h6>
                       </div>
                       <div class="medical">
-                        <h4>Checked by Medical Technologist</h4>
+                        <h4 class="signature-checked-by">
+                          Checked by Medical Technologist
+                        </h4>
                       </div>
                     </div>
                   </div>
@@ -153,8 +201,8 @@
     </div>
 
     <!-- js -->
-    <!-- <script src="./../assets/js/jQuery-v3.6.3.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./../assets/js/jQuery-v3.6.3.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
     <script src="./../assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.panzoom/2.0.6/jquery.panzoom.min.js"></script>
     <script src="./../assets/js/datatables.min.js"></script>
@@ -163,6 +211,29 @@
       type="text/JavaScript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.print/1.6.0/jQuery.print.js"
     ></script>
+    <script src="./../assets/js/jspdf.min.js"></script>
+    <!-- <script src="./../assets/js/html2canvas.min.js"></script> -->
+    <script src="./../assets/js/html2pdf.bundle.js"></script>
     <script src="./../assets/js/main.js"></script>
+
+    <script>
+      var button = document.getElementById("pdfButton");
+      var makepdf = document.getElementById("generatePDF");
+      var opt = {
+        margin: 1,
+        filename: "pdfcreated.pdf",
+        html2canvas: {
+          scale: 2,
+        },
+        jsPDF: {
+          unit: "in",
+          format: "letter",
+          orientation: "portrait",
+        },
+      };
+      button.addEventListener("click", function () {
+        html2pdf().set(opt).from(makepdf).save();
+      });
+    </script>
   </body>
 </html>

@@ -24,11 +24,13 @@ $(document).ready(function () {
   // print
 
   $("#btn").on("click", function () {
-
     $("#printTable").print();
   });
 
 
+
+  // pdf
+ 
 });
 
 function strike(e) {
@@ -65,3 +67,22 @@ function add() {
 ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
   console.error(error);
 });
+
+// pdf
+
+// document.getElementById("generate-pdf").addEventListener("click", function () {
+//   var element = document.getElementById("printTable");
+
+//   var doc = new jsPDF();
+ 
+//   var height = doc.internal.pageSize.height;
+//   var width = doc.internal.pageSize.width;
+
+//   html2canvas(element).then(function (canvas) {
+//     var imgData = canvas.toDataURL("image/png");
+//     doc.addImage(imgData, "PNG", 0, 0, width, height);
+    
+   
+//     doc.save("report.pdf");
+//   });
+// });
