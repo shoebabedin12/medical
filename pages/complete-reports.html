@@ -159,7 +159,7 @@
                         <td><span>Dept. of Radiology & Imaging</span></td>
                         <td><span>Dr. Monjurul Alam</span></td>
                         <td>
-                          <a href="./report-edit.html"
+                          <a href="./report-edit.html" onclick="print()"
                             ><img src="./../assets/images/printer.png" alt=""
                           /></a>
                           <a href="./report-edit.html"
@@ -209,5 +209,13 @@
     <script src="./../assets/js/bootstrap.bundle.min.js"></script>
     <script src="./../assets/js/datatables.min.js"></script>
     <script src="./../assets/js/main.js"></script>
+
+
+    <script>
+      function print(url) {
+    var printWindow = window.open( url);
+    printWindow.print();
+};
+    </script>
   </body>
 </html>
